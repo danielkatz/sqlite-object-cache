@@ -77,6 +77,14 @@ Some hosting providers offer scalable high-performance [redis](https://redis.io/
 
 But many hosting providers don't offer either redis or memcached, while they do offer SQLite. This plugin enables your site to use a persistent object cache even without a separate cache server.
 
+= Is this plugin compatible with my page-caching plugin? =
+
+**Probably**. Page caching and persistent object caching are completely separate functions in WordPress. But, some multi-feature caching plugins support optional object caching using redis or memcached. If that feature is enabled in your page cache plugin, you should not use this plugin.
+
+You can find out whether your page-cache plugin also enables persistent object caching. Look at the Drop-in section of the Plugins -> Installed Plugins page. If it mentions the drop-in called "object-cache.php" then your page cache plugin is handling persistent object caching and you should not use this plugin.
+
+Users of this plugin have found that it works well with WP Rocket, LiteSpeed Cache, WP Total Cache, WP Super Cache, and WP Fastest Cache. It also works with Cloudflare and other content delivery networks. The author has not learned of any incompatibilities in this area. (If you find one *please* start a support topic!)
+
 = Is this plugin compatible with my version of MySQL or MariaDB? =
 
 **Yes**. It does not require any specific database server version.
