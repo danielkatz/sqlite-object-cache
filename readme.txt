@@ -4,7 +4,7 @@ Contributors: OllieJones
 Tags: cache, object cache, sqlite, performance, database
 Requires at least: 5.5
 Requires PHP: 5.6
-Tested up to: 6.5
+Tested up to: 6.6
 Version: 1.3.8
 Stable tag: 1.3.8
 License: GPLv2 or later
@@ -24,9 +24,15 @@ A [persistent object cache](https://developer.wordpress.org/reference/classes/wp
 
 Without a persistent object cache, every WordPress page view must use your MariaDB or MySQL database server to retrieve everything about your site. When a user requests a page, WordPress starts from scratch and loads everything it needs from your database server. Only then can it deliver content to your user. With a persistent object cache, WordPress immediately loads much of the information it needs. This lightens the load on your  database server and delivers content to your users faster.
 
+<h4>Credits</h4>
+
 Thanks to [Till Krüss](https://profiles.wordpress.org/tillkruess/). His [Redis Object Cache](https://wordpress.org/plugins/redis-cache/) plugin serves as a model for this one. And thanks to [Ari Stathopoulos](https://profiles.wordpress.org/aristath/) and [Jonny Harris](https://profiles.wordpress.org/spacedmonkey/) for reviewing this. (All defects are, of course, entirely the author's responsibility.)
 
 And thanks to Jetbrains for the use of their software development tools, especially [PhpStorm](https://www.jetbrains.com/phpstorm/). It's hard to imagine how a plugin like this one could be developed without PhpStorm's tools for exploring epic code bases like WordPress's.
+
+<h4>How can I learn more about making my WordPress site more efficient?</h4>
+
+We offer several plugins to help with your site's database efficiency. You can [read about them here](https://www.plumislandmedia.net/wordpress/performance/optimizing-wordpress-database-servers/).
 
 == Installation ==
 
